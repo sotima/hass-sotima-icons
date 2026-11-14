@@ -46,6 +46,7 @@ if (!window.frontendVersion || window.frontendVersion < 20200519.0) {
 } else if(window.frontendVersion > 20211027.0) {
   // new enough to support getIcon and getIconlist
   sotima_icons_mode = 'picker';
+  window.customIcons = window.customIcons || {};
   window.customIcons["sotima"] = { getIcon, getIconList };
 }
 
